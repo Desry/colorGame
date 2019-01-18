@@ -1,0 +1,71 @@
+body {
+	background: #323339;
+	margin: 0;
+}
+
+#container {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+
+.square {
+	width: 30%;
+	margin: 1.66%;
+	background: white;
+	float: left;
+	padding-bottom: 30%;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #00ff00;
+	font-family: 'VT323', monospace;
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+	background: black;
+	height: 100%;
+	margin: 0;
+	padding: 20px 0; 
+}
+
+#divider {
+	height: 30px;
+	background: white;
+	text-align: center;
+
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+	font-family: 'VT323', monospace;
+	font-size: inherit;
+	color: black;
+	height: 100%;
+}
+
+.selected {
+	background: #00ff00;
+	color: white;
+}
+
+
+button:hover {
+	background: #00ff00;
+	color: white;
+}
+
+#colorDisplay {
+	text-transform: uppercase;
+	color: #00ff00;
+}
+
+#message {
+	width: 250%;
+	padding: 0 15px;
+	font-family: 'VT323', monospace;
+	color: #00ff00;
+}
