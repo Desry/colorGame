@@ -20,8 +20,8 @@ function init() {
 }
 
 function setupGameMode() {
-	for(var i=0; i<modeBtns.length; i++) {
-		modeBtns[i].addEventListener("click", function() {
+	for(var i=0;i<modeBtns.length; i++) {
+		modeBtns[i].addEventListener("click", function(){
 			modeBtns[0].classList.remove("selected");
 			modeBtns[1].classList.remove("selected");
 			modeBtns[2].classList.remove("selected");
@@ -29,14 +29,17 @@ function setupGameMode() {
 
 			if(this.textContent === "Easy") {
 				numSquares = 3;
-			} else if(this.textContent === "Medium") {
+			} else if (this.textContent === "Medium") {
 				numSquares = 6;
 			} else {
 				numSquares = 9;
 			}
+			reset();
 		});
 	}
 }
+
+
 
 function setupModeButtons() {
 	for(var i=0; i<modeBtns.length; i++) {
@@ -57,6 +60,22 @@ function setupModeButtons() {
 		});
 	}
 }
+
+/*
+function setupModeButtons() {
+	for(var i=0; i<modeBtns.length; i++) {
+		modeBtns[i].addEventListener("click", function(){
+			if(this.textContent === "Easy") {
+				numSquares = 3;
+			} else if (this.textContent === "Medium") {
+				numSquares = 6;
+			} else {
+				numSquares = 9;
+			}
+			restart();
+		});
+	}
+}*/
 
 
 function generateSquares() {
@@ -172,6 +191,25 @@ for(var i=0; i<squares.length; i++) {
 		}
 	});
 }
+
+//setupGameMode function
+
+/*function setUpGameMode() {
+	for(var i=0; i<modeBtns.length; i++) {
+		modeBtns[i].addEventListener("click", function(){
+			if(this.textContent === "Easy") {
+				numSquares = 3;
+			} else if (this.textContent === "Medium") {
+				numSquares = 6;
+			} else {
+				numSquares = 9;
+			}
+			reset();
+		});
+	}
+}*/
+
+
 
 function changeColors(color) {
 	for(var i=0; i<squares.length; i++) {

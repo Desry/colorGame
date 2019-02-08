@@ -19,7 +19,8 @@ body {
 }
 
 h1 {
-	color: #00ff00;
+	/*color: #00ff00;*/
+	color: white;
 	font-family: 'VT323', monospace;
 	text-align: center;
 	font-size: 40px;
@@ -60,7 +61,8 @@ button:hover {
 
 #colorDisplay {
 	text-transform: uppercase;
-	color: #00ff00;
+	/*color: #00ff00;*/
+	color: white;
 }
 
 #message {
