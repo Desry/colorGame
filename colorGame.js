@@ -39,25 +39,6 @@ function setupModeButtons() {
 	}
 }
 
-function generateSquares() {
-	for(var i=0; i<squares.length; i++){
-		squares[i].style.backgroundColor = colors[i];
-		squares[i].addEventListener("click", function(){
-			var clickedColor=this.style.backgroundColor;
-
-			if(clickedColor===pickedColor){
-				messageDisplay.textContent="Correct!";
-				changeColors(clickedColor);
-				resetBtn.textContent="Play Again?";
-			} else {
-				this.style.backgroundColor="#323339";
-				messageDisplay.textContent="Try Again";
-			}
-		});
-	}
-}
-
-
 function setupSquares() {
 	for(var i=0; i<squares.length; i++) {
 		squares[i].style.backgroundColor = colors[i];
